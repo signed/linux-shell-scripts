@@ -1,0 +1,8 @@
+#!/bin/sh
+gradle_executable='~/applications/gradle/current/bin/gradle'
+expected_gradlewrapper="${PWD}/gradlew"
+if [ -x $expected_gradlewrapper ]
+then
+  gradle_executable=$expected_gradlewrapper
+fi
+$gradle_executable $@
