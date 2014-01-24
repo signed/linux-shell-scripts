@@ -1,0 +1,3 @@
+#!/bin/sh
+
+mvn -Dmaven.repo.local=/home/signed/.m2/dirty-repository $@
